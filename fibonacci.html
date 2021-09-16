@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Fibonacci</title>
+</head>
+<body>
+<script>
+    function displayFibonacci() {
+        let N = +prompt("Nhập vào số lượng");
+
+        let a = 1;
+        let b = 1;
+        let c = a + b;
+        let count = 2;
+        let sum = c;
+        document.write(a + ',' + b);
+
+        while (count < N) {
+            c = a + b;
+            a = b;
+            b = c;
+
+            sum += c;
+            document.write(','+c);
+            count++;
+        }
+
+        document.write("<br> Tổng các số Fibonacci: " + sum);
+    }
+
+    function checkPrime(){
+        let num = 3;
+        let count = 0;
+        let N = 2;
+        let sum = 0;
+        let multiple = 1;
+
+        while (count < num)
+        {
+            let flag = true; // Kĩ thuật đặt lính canh, cờ hiệu
+            if(N < 2){
+                flag = false;
+            }
+            let i = 2;
+            while (i < N){
+                if(N % i === 0){
+                    flag = false;
+                }
+                i++;
+            }
+
+            if(flag === true){
+                document.write(N+',')
+                count++;
+                sum+=N;
+                multiple*=N;
+            }
+            N++;
+        }
+
+        document.write("<br>");
+        document.write("Tổng " + num +  " số nguyên tố là: "+sum);
+        document.write("<br>");
+        document.write("Tích " + num +  " số nguyên tố là: "+multiple);
+
+    }
+    checkPrime();
+</script>
+</body>
+</html>

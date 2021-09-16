@@ -1,0 +1,21 @@
+- Solve Problem Code Later - Tư duy rành mạch
+(Giải quyết vấn đề trước  - Code sau)
+- Thuật toán
+    - Lưu đồ
+    - Mã giả
+- Từ lưu đồ chuyển thành code
+Bài tập ứng dụng
+- Tính tổng 20 số đầu tiên của dãy fibonacci.
+    - In ra 20 số fibo //n số
+        - Quy luật: số sau bằng tổng 2 số trước nó
+        - 2 số đầu tiên: 1,1
+    - Tính tổng 20 số
+        - Thêm 1 biến sum
+
+- Tính tổng 20 số nguyên tố đầu tiên.
+    - In ra 20 số nguyên tố
+        - Xác định 1 số nguyên tố
+            - Chỉ chia hết cho 1 và chính nó
+            - Không chia hết cho 2 -> nó - 1
+        - In ra 20 số
+    - Tính tổng 20 số
